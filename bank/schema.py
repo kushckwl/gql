@@ -20,17 +20,10 @@ class BranchesNode(DjangoObjectType):
         interfaces = (relay.Node, )
 
 class Query(graphene.ObjectType):
-    #all_bank = relay.Node.Field(BankNode)
     bank = DjangoFilterConnectionField(BankNode)
-    # all_branches = relay.Node.Field(BranchesNode) 
     branches = DjangoFilterConnectionField(BranchesNode)
 
 
-    # def resolve_bank(root, info):
-    #     return Bank.objects.all() 
-
-    # def resolve_branches(root, info):
-    #     return Branches.objects.all()    
-       
+  
 
 schema = graphene.Schema(query=Query)        
