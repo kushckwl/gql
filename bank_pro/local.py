@@ -16,3 +16,6 @@ DATABASES = {
         'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
+
+
+#token git  = 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
