@@ -1,13 +1,14 @@
 # GraphQL
-
-### Live at https://indbank.herokuapp.com/gql
-
+ 
+## Live at https://indbank.herokuapp.com/gql
+ 
 ## Api Documentation
-
-#### This project made in Django Framework. I used graphene library to make this project. Project live at https://indbank.herokuapp.com/gql
-
-Query
-```   
+This project made in Django Framework. I used graphene library to make this project. Project live at https://indbank.herokuapp.com/gql
+ 
+ 
+### Query
+ 
+```
 query{
   branches{
     edges{
@@ -21,8 +22,11 @@ query{
       }
     }
   }
+ 
 ```
-Output
+ 
+### Output
+ 
 ```
 {
   "data": {
